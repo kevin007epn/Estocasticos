@@ -3,7 +3,7 @@
 #una moneda y por cada sello que botenga en el lanzamiento
 #cobra un aunidad monetaria, asuma que el juegor inicia el juego
 #con 0 unidades monetarias.
-
+try <- cumsum(sample(c(0,1), size = 6, replace = TRUE))
 plot(1:length(try), try, type = "b", col = 2)
 
 # Función que genera una trayectoria tras realizar n lanzamientos
