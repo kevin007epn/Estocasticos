@@ -1,7 +1,7 @@
 #Simulacion del juego consiste en lanzar una moneda
-#Enunciado: Suponga que un juagor accede al juego de lanzar
-#una moneda y por cada sello que botenga en el lanzamiento
-#cobra un aunidad monetaria, asuma que el juegor inicia el juego
+#Enunciado: Suponga que un jugador accede al juego de lanzar
+#una moneda y por cada sello que obtenga en el lanzamiento
+#cobra una unidad monetaria, asuma que el jugador inicia el juego
 #con 0 unidades monetarias.
 try <- cumsum(sample(c(0,1), size = 6, replace = TRUE))
 plot(1:length(try), try, type = "b", col = 2)
@@ -13,7 +13,7 @@ try <- function(n){
 }
 try(6)
 
-# Función que genera m replias de trayectorias.
+# Función que genera m replicas de trayectorias.
 rpl <- function(m,n){
   res <- matrix(0, ncol = n, nrow = m)
   for(j in 1:m){
